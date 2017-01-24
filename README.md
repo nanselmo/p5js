@@ -9,20 +9,22 @@ Code modified from
 
 ## Incrementing with Variables
 ```js
-var xPos=40;
-var yPos=50;
+var xPos=0;
+var yPos=0;
 var gColor=0;
 function setup() {
   createCanvas(600, 400);
 }
 
 function draw() {
-    fill(0,gColor,0);
-    ellipse(xPos,yPos,10,10);
-    xPos=xPos+10;
-    yPos=yPos+20;
-    gColor=gColor+50;
-  
+  //uncomment out the background will redraw the background each time so the previous elipse doesn't show
+  //background(0,0,0);
+  fill(0,gColor,0);
+  ellipse(xPos,yPos,10,10);
+  xPos=xPos+5;
+  yPos=yPos+10;
+  gColor=gColor+10;
+
 }
 ```
 ## Mouse Paint w/ Random Color
