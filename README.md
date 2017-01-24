@@ -1,5 +1,12 @@
 # p5js
 
+##References
+
+Code modified from
+* [Daniel Shiffman p5 tutorial](http://wykhuh.github.io/shiffman-p5-tutorials/)
+* [Learning Processing Book from Daniel Shiffman](http://learningprocessing.com/examples)
+
+
 ## Incrementing with Variables
 ```js
 var xPos=40;
