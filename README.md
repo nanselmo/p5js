@@ -38,7 +38,7 @@ function draw() {
 
 }
 ```
-##Speed with pmouseX
+## Speed with pmouseX
 ```js
 var speed=0;
 function setup() {
@@ -52,5 +52,24 @@ function draw() {
   //define speed as the difference in the mouse's x position
   speed=mouseX-pmouseX
 
+}
+```
+
+## Change Color on Conditional Statement testing X value
+
+```js
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  if (mouseX>150){
+    redColor=100;
+  } else if (mouseX < 150) {
+    redColor=0;
+  }
+  fill(redColor,random(0,225),225);
+  ellipse(mouseX,mouseY,10,10);
+  
 }
 ```
